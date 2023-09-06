@@ -1,3 +1,7 @@
+The String Should be compressed such that consecutive duplicates of characters are replaced with the character and followed by the number of Consecutive duplicates.
+Input: aaabbbccddde
+Output: a3b3c2d3e
+
 package Strings;
 
 public class Stringcompression {
