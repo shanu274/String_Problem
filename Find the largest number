@@ -1,0 +1,26 @@
+class Solution{
+    static int find(int N){
+        // code here   
+        for(int i = 0; i < N; i++){
+            if(check(N-i)){
+                return N-i;
+            }
+        }            
+        return 9;
+    }
+    
+    static boolean check(int N){
+        String str = String.valueOf(N);
+        for(int i = 1; i < str.length(); i++){
+            char a = str.charAt(i-1);
+            char b = str.charAt(i);
+            int aa = a - 'a';
+            int bb = b - 'a';
+            if(aa > bb){
+                return false;
+            }
+            
+        }
+        return true;
+    }
+}
